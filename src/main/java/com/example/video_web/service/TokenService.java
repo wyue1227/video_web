@@ -21,7 +21,7 @@ public class TokenService {
 
     /**
      * 添加校验用token
-     * @param token
+     * @param userId 用户id
      * @return
      */
     @Transactional
