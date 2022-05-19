@@ -28,6 +28,12 @@ replay_pid*
 .idea/
 *.iml
 
+# vscode
+.classpath
+.factorypath
+.project
+/.settings
+
 # maven
 mvnw
 mvnw.cmd
