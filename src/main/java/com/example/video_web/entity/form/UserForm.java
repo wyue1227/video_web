@@ -14,7 +14,7 @@ import javax.validation.constraints.Pattern;
  */
 @Getter
 @Setter
-public class UserForm extends BaseForm<User>{
+public class UserForm extends BaseForm<User> {
 
     @NotBlank(message = "⼿机号码不能为空")
     @NotNull(message = "⼿机号不能为空")
