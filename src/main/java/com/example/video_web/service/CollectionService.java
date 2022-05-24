@@ -1,6 +1,5 @@
 package com.example.video_web.service;
 
-import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.example.video_web.entity.po.Collection;
 import com.example.video_web.mapper.CollectionMapper;
 import org.springframework.stereotype.Service;
@@ -15,8 +14,6 @@ public class CollectionService {
     CollectionMapper collectionMapper;
 
     public List<Collection> getAllCollection() {
-        QueryWrapper<Collection> queryWrapper = new QueryWrapper();
-        queryWrapper.isNotNull("collection_id");
-        return collectionMapper.selectList(queryWrapper);
+        return collectionMapper.getAllCollectionWithTags();
     }
 }
