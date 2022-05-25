@@ -25,4 +25,6 @@ public class Collection extends BasePo implements Serializable {
     @TableField(exist = false)
     private List<Tag> tags;
 
+    private Integer videoCount;
+
 }
